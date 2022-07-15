@@ -1,33 +1,30 @@
+from api.filters import TitleFilter
+from api.permissions import (AdminModeratorAuthorPermission, AdminOnly,
+                             AuthorPermission, IsAdminOrReadOnly)
 from django.conf import settings
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.core.mail import send_mail
 from django.db import IntegrityError
-from django.shortcuts import get_object_or_404
 from django.db.models import Avg
+from django.shortcuts import get_object_or_404
 from django.utils import six
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import status, viewsets
 from rest_framework.decorators import action, api_view
 from rest_framework.exceptions import ValidationError
-from rest_framework_simplejwt.tokens import RefreshToken
-from rest_framework import status, viewsets
+from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.pagination import LimitOffsetPagination
-
-from users.models import User
-from reviews.models import Category, Genre, Review, Title
+from rest_framework_simplejwt.tokens import RefreshToken
 from reviews.mixins import CreateDestroyListMixinSet
-from api.filters import TitleFilter
-from api.permissions import (
-    AdminModeratorAuthorPermission, IsAdminOrReadOnly,
-    AdminOnly, AuthorPermission
-)
-from .serializers import (
-    CategorySerializer, CommentSerializer, GenreSerializer,
-    ReviewSerializer, TitleReadSerializer, TitleWriteSerializer,
-    UserSerializer, RoleSerializer, RegistrationSerializer,
-    TokenSerializer
-)
+from reviews.models import Category, Genre, Review, Title
+from users.models import User
+
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, RegistrationSerializer,
+                          ReviewSerializer, RoleSerializer,
+                          TitleReadSerializer, TitleWriteSerializer,
+                          TokenSerializer, UserSerializer)
 
 
 class AccountActivationTokenGenerator(PasswordResetTokenGenerator):
