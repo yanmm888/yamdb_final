@@ -1,7 +1,7 @@
 # Yamdb with Docker and workflows
 ## База отзывов пользователей о фильмах, музыке и книгах
 ## Стек технологий: Python 3, Django REST Framework, PostgreSQL, Simple-JWT, NGINX, Docker, flake, pytest
-### Статус: 
+### Статус workflow: 
 ![example workflow](https://github.com/yanmm888/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
 ##### Создание файла с переменными окружения .env
