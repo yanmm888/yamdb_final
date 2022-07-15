@@ -19,18 +19,18 @@
 ```docker-compose up```
 
 ### Выполнить миграции:
-```docker-compose exec web python manage.py makemigrations``` \
-```docker-compose exec web python manage.py migrate``` \
+```docker-compose exec web python manage.py makemigrations``` 
+```docker-compose exec web python manage.py migrate``` 
 
 ### Создать суперпользователя:
-```docker-compose exec web python manage.py createsuperuser```\
-для windows 
-```winpty docker-compose exec web python manage.py createsuperuser```\
+```docker-compose exec web python manage.py createsuperuser```
+#### для windows 
+```winpty docker-compose exec web python manage.py createsuperuser``
 
 ### Привязать статические файлы:
-```docker-compose exec web python manage.py collectstatic --no-input```\
+```docker-compose exec web python manage.py collectstatic --no-input```
 ### Информация об образе на Dockerhub
 ```nmm888/api_yamdb:v05.07.2022 ```
 ### Информация об авторе
 Malik Nurmagomedov
-```https://github.com/yanmm888/```\
+```https://github.com/yanmm888/```
