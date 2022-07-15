@@ -8,7 +8,7 @@ services:
       - .env
 
   web:
-    build: nmm888/api_yamdb:latest
+    image: nmm888/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
