@@ -25,7 +25,7 @@
 ### Создать суперпользователя:
 ```docker-compose exec web python manage.py createsuperuser```
 #### для windows 
-```winpty docker-compose exec web python manage.py createsuperuser``
+```winpty docker-compose exec web python manage.py createsuperuser```
 
 ### Привязать статические файлы:
 ```docker-compose exec web python manage.py collectstatic --no-input```
