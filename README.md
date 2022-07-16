@@ -2,6 +2,7 @@
 ## База отзывов пользователей о фильмах, музыке и книгах
 ## Стек технологий: Python 3, Django REST Framework, PostgreSQL, Simple-JWT, NGINX, Docker, flake, pytest
 ### Проект развернут на http://yatube.ps-card.ru/admin
+### Документация http://yatube.ps-card.ru/redoc/
 ### Статус workflow: 
 ![example workflow](https://github.com/yanmm888/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 ____
