@@ -4,11 +4,7 @@
 ### Проект развернут на http://yatube.ps-card.ru/admin
 ### Статус workflow: 
 ![example workflow](https://github.com/yanmm888/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
-
-<<<<<<< HEAD
-### 
-```nmm888/api_yamdb:v05.07.2022 ```
-=======
+____
 ##### Создание файла с переменными окружения .env
 Пример:
 - Ключ приложения ```SECRET_KEY='very_strong_secret_key'```
@@ -31,7 +27,6 @@
 ```docker-compose exec web python manage.py createsuperuser```
 #### для windows 
 ```winpty docker-compose exec web python manage.py createsuperuser```
->>>>>>> f277123bfee648b344b974ccd4079f9300158850
 
 ### Информация об образе на Dockerhub
 ```nmm888/api_yamdb```
